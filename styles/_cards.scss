@@ -1,0 +1,73 @@
+.card {
+    width: 90%;
+    padding: 13%;
+    &:first-child {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+
+.sedans {
+    background-color: $Bright-orange;
+}
+
+.suvs {
+    background-color: $Dark-cyan;
+}
+
+.luxury {
+    background-color: $Very-dark-cyan;
+}
+
+.card-title {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2.8rem;
+    color: $Very-light-gray-BG;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: $Transparent-white-PG;
+}
+
+.btn {
+    background-color: $Very-light-gray-BG;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+
+    a {
+        font-size: 1.5rem;
+        padding: 0 3rem;
+    }
+
+    &:hover {
+        background: none;
+        border: 2px solid $Very-light-gray-BG;
+
+        .btn-sedans, .btn-suvs, .btn-luxury {
+            color: $Very-light-gray-BG;
+        }
+    }
+}
+
+.btn-sedans {
+    color: $Bright-orange;
+}
+
+.btn-suvs {
+    color: $Dark-cyan;
+}
+
+.btn-luxury {
+    color: $Very-dark-cyan;
+}

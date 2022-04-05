@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 90%;
+  padding: 13%;
+}
+
+.card:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card:last-child {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2.8rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  background-color: #f2f2f2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+.btn a {
+  font-size: 1.5rem;
+  padding: 0 3rem;
+}
+
+.btn:hover {
+  background: none;
+  border: 2px solid #f2f2f2;
+}
+
+.btn:hover .btn-sedans, .btn:hover .btn-suvs, .btn:hover .btn-luxury {
+  color: #f2f2f2;
+}
+
+.btn-sedans {
+  color: #e38826;
+}
+
+.btn-suvs {
+  color: #006970;
+}
+
+.btn-luxury {
+  color: #004241;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 100vh;
+    width: 92%;
+    padding-top: 5%;
+  }
+  .card {
+    padding: 5rem;
+  }
+  .card:first-child {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .card:last-child {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .btn {
+    margin-top: 8.5rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 75%;
+    max-width: 60rem;
+  }
+  .btn {
+    margin-top: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
